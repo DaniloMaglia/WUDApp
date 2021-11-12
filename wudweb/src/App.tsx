@@ -1,9 +1,9 @@
 import './static/css/App.css';
-import {Card} from "./wud/Wud";
+import {Card} from "./wud";
 
 function App() {
   	return (
-	  	<div className="grid grid-cols-12 gap-12 h-full">
+	  	<div className="h-screen grid grid-cols-12 gap-12">
 			<div className="col-span-1 "/>
 			<Card width="3" color="white" >
 				<p>CONTATTI</p>
