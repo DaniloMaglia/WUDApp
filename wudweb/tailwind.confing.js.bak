@@ -1,10 +1,14 @@
 
 
 module.exports = {
+    mode: 'jit',
     purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
      darkMode: false, // or 'media' or 'class'
      theme: {
        extend: {},
+       boxShadow: {
+         ar: '5px 5px 15px 5px rgba(0,0,0,0)'
+       },
      },
      variants: {
        extend: {},
