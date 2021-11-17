@@ -21,8 +21,8 @@ export class ChatList extends React.Component {
         this.gatherActiveChats(); // TODO: Viene chiamato ogni volta che renderizza nuovamente la pagina (Capire se è ottimizzato)
         return (
             <div className={''}>
-                <span className={'items-center justify-center h-20 shadow-lg w-full rounded-2xl text-4xl font-semibold text-center text-indigo-500 uppercase py-2'}>contacts</span>
-                <div className={'items-center overflow-y-hidden overflow-x-hidden text-center'}>
+                <span className={'flex items-center justify-center h-20 shadow-lg w-full rounded-2xl text-4xl font-semibold text-center text-indigo-500 uppercase py-2'}>contacts</span>
+                <div className={'flex items-center flex-col	overflow-y-hidden overflow-x-hidden text-center'}>
                     {this.activeChatList}
                 </div>
             </div>
