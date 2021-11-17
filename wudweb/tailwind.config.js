@@ -1,7 +1,8 @@
 module.exports = {
-  	mode: 'jit',
+  	
   	purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-   	darkMode: false, // or 'media' or 'class'
+
+	darkMode: false, // or 'media' or 'class'
    	theme: {
      	boxShadow: {
       		sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
@@ -12,7 +13,6 @@ module.exports = {
       		'2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
      		'3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
       		inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
-      		ar: '5px 5px 15px 5px rgba(0,0,0,0)',
       		none: 'none',
     	}
    	},
