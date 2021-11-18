@@ -1,18 +1,23 @@
 import './static/css/App.css';
-import { Card, ChatList } from "./wud";
+import { BrowserRouter, Routes, Route  } from "react-router-dom";
+import { ChatPage, LoginPage } from './pages';
 
 function App() {
   	return (
-	  	<div className="h-screen m-5 grid grid-cols-12 gap-12">
-			<div className="col-span-1 "/>
-			<Card width="3" color="white" >
-                <ChatList />
-			</Card>
-			<Card width="7" color="white">
-				<p>Chat generale</p>
-			</Card>
-			<div className="col-span-1" />
-		</div>
+        <BrowserRouter>
+            <Routes>
+                <Route path="/">
+                    {/* <Route index element={<ChatPage />} /> */}
+
+                    <Route path="/login">
+                        <Route index element={<LoginPage />} />
+                    </Route>
+                    <Route path="/chat">
+                        <Route index element={<ChatPage />} />
+                    </Route>
+                </Route>
+            </Routes>
+        </BrowserRouter>
 	);
 }
 
